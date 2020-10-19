@@ -658,5 +658,6 @@
     <comp lib="0" loc="(1850,560)" name="Constant">
       <a name="facing" val="north"/>
     </comp>
+    <comp lib="0" loc="(200,510)" name="Constant"/>
   </circuit>
 </project>
