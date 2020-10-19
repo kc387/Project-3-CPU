@@ -520,10 +520,6 @@
       <a name="label" val="write_reg"/>
     </comp>
     <comp lib="1" loc="(660,300)" name="AND Gate"/>
-    <comp lib="0" loc="(520,320)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="label" val="write_en"/>
-    </comp>
     <comp lib="1" loc="(680,550)" name="AND Gate"/>
     <comp lib="1" loc="(680,660)" name="AND Gate"/>
     <comp lib="1" loc="(670,770)" name="AND Gate"/>
@@ -685,6 +681,9 @@
       <a name="label" val="read_data2"/>
     </comp>
     <comp loc="(970,290)" name="regfilesadness"/>
+    <comp lib="0" loc="(520,320)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
   </circuit>
   <circuit name="regfilesadness">
     <a name="circuit" val="regfilesadness"/>
