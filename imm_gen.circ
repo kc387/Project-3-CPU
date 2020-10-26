@@ -130,14 +130,12 @@
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="61" y="137">ImmSel</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="109" y="104">imm</text>
       <circ-port height="8" pin="200,230" width="8" x="76" y="146"/>
-      <circ-port height="8" pin="200,160" width="8" x="36" y="96"/>
       <circ-port height="10" pin="940,160" width="10" x="115" y="95"/>
+      <circ-port height="8" pin="200,160" width="8" x="36" y="96"/>
       <polygon fill="none" points="40,31 120,70 120,130 40,170" stroke="#000000" stroke-width="2"/>
       <text font-family="SansSerif" font-size="12" font-weight="bold" text-anchor="middle" x="80" y="81">Imm Gen</text>
       <circ-anchor facing="east" height="6" width="6" x="117" y="97"/>
     </appear>
-    <wire from="(460,170)" to="(520,170)"/>
-    <wire from="(560,170)" to="(620,170)"/>
     <wire from="(540,330)" to="(580,330)"/>
     <wire from="(540,570)" to="(580,570)"/>
     <wire from="(650,480)" to="(650,570)"/>
@@ -158,18 +156,18 @@
     <wire from="(220,100)" to="(220,140)"/>
     <wire from="(620,440)" to="(650,440)"/>
     <wire from="(200,230)" to="(220,230)"/>
-    <wire from="(440,420)" to="(520,420)"/>
+    <wire from="(440,440)" to="(520,440)"/>
     <wire from="(440,360)" to="(520,360)"/>
+    <wire from="(440,420)" to="(520,420)"/>
     <wire from="(440,340)" to="(520,340)"/>
     <wire from="(440,320)" to="(520,320)"/>
-    <wire from="(440,440)" to="(520,440)"/>
     <wire from="(440,460)" to="(520,460)"/>
     <wire from="(440,500)" to="(520,500)"/>
     <wire from="(440,520)" to="(520,520)"/>
-    <wire from="(440,380)" to="(520,380)"/>
+    <wire from="(440,540)" to="(520,540)"/>
     <wire from="(440,580)" to="(520,580)"/>
     <wire from="(440,560)" to="(520,560)"/>
-    <wire from="(440,540)" to="(520,540)"/>
+    <wire from="(440,380)" to="(520,380)"/>
     <wire from="(620,330)" to="(670,330)"/>
     <wire from="(640,470)" to="(690,470)"/>
     <wire from="(220,250)" to="(220,260)"/>
@@ -190,10 +188,10 @@
     <wire from="(70,260)" to="(220,260)"/>
     <wire from="(620,570)" to="(650,570)"/>
     <wire from="(200,160)" to="(220,160)"/>
+    <wire from="(440,390)" to="(520,390)"/>
     <wire from="(440,430)" to="(520,430)"/>
     <wire from="(440,330)" to="(520,330)"/>
     <wire from="(440,310)" to="(520,310)"/>
-    <wire from="(440,390)" to="(520,390)"/>
     <wire from="(440,370)" to="(520,370)"/>
     <wire from="(440,450)" to="(520,450)"/>
     <wire from="(440,490)" to="(520,490)"/>
@@ -201,7 +199,6 @@
     <wire from="(440,550)" to="(520,550)"/>
     <wire from="(440,590)" to="(520,590)"/>
     <wire from="(440,570)" to="(520,570)"/>
-    <wire from="(370,170)" to="(440,170)"/>
     <comp lib="0" loc="(220,160)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="inst"/>
@@ -236,54 +233,6 @@
     </comp>
     <comp lib="0" loc="(920,160)" name="Tunnel">
       <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="imm"/>
-    </comp>
-    <comp lib="0" loc="(370,170)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="inst"/>
-    </comp>
-    <comp lib="0" loc="(440,170)" name="Splitter">
-      <a name="incoming" val="32"/>
-      <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="0"/>
-      <a name="bit17" val="0"/>
-      <a name="bit18" val="0"/>
-      <a name="bit19" val="0"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
-    </comp>
-    <comp lib="0" loc="(560,170)" name="Bit Extender">
-      <a name="in_width" val="12"/>
-      <a name="out_width" val="32"/>
-    </comp>
-    <comp lib="0" loc="(620,170)" name="Tunnel">
       <a name="width" val="32"/>
       <a name="label" val="imm"/>
     </comp>
