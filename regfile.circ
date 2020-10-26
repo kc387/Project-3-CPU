@@ -1069,6 +1069,7 @@
     <wire from="(1290,230)" to="(1310,230)"/>
     <comp lib="0" loc="(220,510)" name="Pin">
       <a name="width" val="32"/>
+      <a name="label" val="data"/>
     </comp>
     <comp lib="6" loc="(121,513)" name="Text">
       <a name="text" val="data"/>
@@ -1090,12 +1091,16 @@
       <a name="text" val="WE"/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
-    <comp lib="0" loc="(70,110)" name="Pin"/>
+    <comp lib="0" loc="(70,110)" name="Pin">
+      <a name="label" val="WE"/>
+    </comp>
     <comp lib="6" loc="(38,75)" name="Text">
       <a name="text" val="clk"/>
       <a name="font" val="SansSerif plain 12"/>
     </comp>
-    <comp lib="0" loc="(70,20)" name="Pin"/>
+    <comp lib="0" loc="(70,20)" name="Pin">
+      <a name="label" val="reset"/>
+    </comp>
     <comp lib="6" loc="(32,25)" name="Text">
       <a name="text" val="reset"/>
       <a name="font" val="SansSerif plain 12"/>
@@ -1103,7 +1108,9 @@
     <comp lib="0" loc="(110,20)" name="Tunnel">
       <a name="label" val="reset"/>
     </comp>
-    <comp lib="0" loc="(70,70)" name="Pin"/>
+    <comp lib="0" loc="(70,70)" name="Pin">
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="0" loc="(1090,230)" name="Tunnel">
       <a name="label" val="reset"/>
     </comp>
@@ -2240,7 +2247,9 @@
     <comp lib="0" loc="(1140,390)" name="Tunnel">
       <a name="label" val="out3"/>
     </comp>
-    <comp lib="0" loc="(70,70)" name="Pin"/>
+    <comp lib="0" loc="(70,70)" name="Pin">
+      <a name="label" val="clk"/>
+    </comp>
     <comp lib="4" loc="(1500,140)" name="D Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
@@ -2350,6 +2359,7 @@
     </comp>
     <comp lib="0" loc="(220,510)" name="Pin">
       <a name="width" val="32"/>
+      <a name="label" val="data"/>
     </comp>
     <comp lib="0" loc="(780,940)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -2382,7 +2392,9 @@
     <comp lib="0" loc="(1370,510)" name="Tunnel">
       <a name="label" val="out12"/>
     </comp>
-    <comp lib="0" loc="(70,110)" name="Pin"/>
+    <comp lib="0" loc="(70,110)" name="Pin">
+      <a name="label" val="WE"/>
+    </comp>
     <comp lib="4" loc="(1060,20)" name="D Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
@@ -2885,7 +2897,9 @@
     <comp lib="4" loc="(1070,380)" name="D Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
-    <comp lib="0" loc="(70,20)" name="Pin"/>
+    <comp lib="0" loc="(70,20)" name="Pin">
+      <a name="label" val="reset"/>
+    </comp>
     <comp lib="6" loc="(32,25)" name="Text">
       <a name="text" val="reset"/>
       <a name="font" val="SansSerif plain 12"/>
