@@ -977,7 +977,7 @@
     </comp>
     <comp lib="0" loc="(250,1350)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="PCSel"/>
+      <a name="label" val="jump"/>
     </comp>
     <comp lib="0" loc="(180,1310)" name="Constant">
       <a name="width" val="32"/>

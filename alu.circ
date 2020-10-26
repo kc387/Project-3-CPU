@@ -161,8 +161,8 @@
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="46" y="175">B</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="start" x="70" y="165">ALUSel</text>
       <text fill="#404040" font-family="Dialog" font-size="12" text-anchor="end" x="114" y="114">Result</text>
-      <circ-port height="8" pin="200,310" width="8" x="86" y="176"/>
       <circ-port height="10" pin="1180,240" width="10" x="115" y="105"/>
+      <circ-port height="8" pin="200,310" width="8" x="86" y="176"/>
       <circ-port height="8" pin="200,160" width="8" x="36" y="56"/>
       <circ-port height="8" pin="200,250" width="8" x="36" y="166"/>
       <polygon fill="none" points="40,20 120,70 120,160 40,210 40,130 60,115 40,100" stroke="#000000" stroke-width="2"/>
@@ -1856,12 +1856,12 @@
     <wire from="(690,470)" to="(690,540)"/>
     <wire from="(670,1170)" to="(670,1240)"/>
     <wire from="(650,670)" to="(650,740)"/>
+    <wire from="(630,970)" to="(630,1040)"/>
     <wire from="(630,1370)" to="(630,1440)"/>
     <wire from="(670,770)" to="(670,840)"/>
+    <wire from="(650,1070)" to="(650,1140)"/>
     <wire from="(690,870)" to="(690,940)"/>
     <wire from="(670,1570)" to="(670,1640)"/>
-    <wire from="(630,970)" to="(630,1040)"/>
-    <wire from="(650,1070)" to="(650,1140)"/>
     <wire from="(690,1270)" to="(690,1340)"/>
     <wire from="(690,1670)" to="(690,1740)"/>
     <wire from="(250,720)" to="(250,730)"/>
@@ -1919,11 +1919,11 @@
     <wire from="(1190,850)" to="(1220,850)"/>
     <wire from="(100,640)" to="(180,640)"/>
     <wire from="(130,340)" to="(130,590)"/>
+    <wire from="(720,600)" to="(720,650)"/>
     <wire from="(720,1000)" to="(720,1050)"/>
     <wire from="(620,520)" to="(700,520)"/>
     <wire from="(620,920)" to="(700,920)"/>
     <wire from="(720,1400)" to="(720,1450)"/>
-    <wire from="(720,600)" to="(720,650)"/>
     <wire from="(620,1320)" to="(700,1320)"/>
     <wire from="(620,1720)" to="(700,1720)"/>
     <wire from="(620,220)" to="(630,220)"/>
@@ -2003,13 +2003,13 @@
     <wire from="(680,420)" to="(680,490)"/>
     <wire from="(660,320)" to="(660,390)"/>
     <wire from="(700,520)" to="(700,590)"/>
+    <wire from="(680,1220)" to="(680,1290)"/>
     <wire from="(660,1520)" to="(660,1590)"/>
     <wire from="(660,720)" to="(660,790)"/>
     <wire from="(640,1420)" to="(640,1490)"/>
     <wire from="(680,820)" to="(680,890)"/>
     <wire from="(640,1020)" to="(640,1090)"/>
     <wire from="(660,1120)" to="(660,1190)"/>
-    <wire from="(680,1220)" to="(680,1290)"/>
     <wire from="(650,270)" to="(710,270)"/>
     <wire from="(700,920)" to="(700,990)"/>
     <wire from="(700,1320)" to="(700,1390)"/>
@@ -2838,13 +2838,13 @@
     <wire from="(1190,850)" to="(1220,850)"/>
     <wire from="(100,640)" to="(180,640)"/>
     <wire from="(130,340)" to="(130,590)"/>
-    <wire from="(630,690)" to="(710,690)"/>
-    <wire from="(630,770)" to="(710,770)"/>
-    <wire from="(630,370)" to="(710,370)"/>
-    <wire from="(630,290)" to="(710,290)"/>
     <wire from="(720,600)" to="(720,650)"/>
+    <wire from="(630,770)" to="(710,770)"/>
     <wire from="(720,1000)" to="(720,1050)"/>
     <wire from="(720,1400)" to="(720,1450)"/>
+    <wire from="(630,690)" to="(710,690)"/>
+    <wire from="(630,370)" to="(710,370)"/>
+    <wire from="(630,290)" to="(710,290)"/>
     <wire from="(630,1570)" to="(710,1570)"/>
     <wire from="(630,1490)" to="(710,1490)"/>
     <wire from="(630,1170)" to="(710,1170)"/>
@@ -3670,9 +3670,6 @@
     <a name="clabelfont" val="SansSerif bold 16"/>
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
-    <wire from="(860,160)" to="(900,160)"/>
-    <wire from="(520,70)" to="(520,100)"/>
-    <wire from="(510,120)" to="(550,120)"/>
     <wire from="(180,400)" to="(210,400)"/>
     <wire from="(180,290)" to="(210,290)"/>
     <wire from="(130,400)" to="(160,400)"/>
@@ -3685,6 +3682,9 @@
     <wire from="(510,70)" to="(520,70)"/>
     <wire from="(160,180)" to="(170,180)"/>
     <wire from="(160,90)" to="(170,90)"/>
+    <wire from="(860,160)" to="(900,160)"/>
+    <wire from="(520,70)" to="(520,100)"/>
+    <wire from="(510,120)" to="(550,120)"/>
     <comp lib="0" loc="(160,180)" name="Pin">
       <a name="width" val="32"/>
     </comp>
@@ -3868,8 +3868,8 @@
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(160,260)" to="(190,260)"/>
-    <wire from="(110,260)" to="(140,260)"/>
     <wire from="(530,130)" to="(570,130)"/>
+    <wire from="(110,260)" to="(140,260)"/>
     <wire from="(160,90)" to="(170,90)"/>
     <wire from="(160,180)" to="(170,180)"/>
     <comp lib="0" loc="(170,90)" name="Tunnel">
