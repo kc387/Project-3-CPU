@@ -267,6 +267,7 @@
     <wire from="(540,790)" to="(590,790)"/>
     <wire from="(1500,190)" to="(1500,220)"/>
     <wire from="(1370,620)" to="(1370,650)"/>
+    <wire from="(80,530)" to="(80,540)"/>
     <wire from="(410,980)" to="(410,990)"/>
     <wire from="(1290,620)" to="(1290,650)"/>
     <wire from="(590,190)" to="(590,260)"/>
@@ -374,6 +375,7 @@
     <wire from="(210,1280)" to="(220,1280)"/>
     <wire from="(1370,420)" to="(1400,420)"/>
     <wire from="(520,170)" to="(600,170)"/>
+    <wire from="(70,540)" to="(80,540)"/>
     <wire from="(200,70)" to="(590,70)"/>
     <wire from="(1430,410)" to="(1450,410)"/>
     <wire from="(1090,630)" to="(1110,630)"/>
@@ -846,12 +848,12 @@
     </comp>
     <comp lib="0" loc="(1610,570)" name="Tunnel">
       <a name="width" val="32"/>
-      <a name="label" val="R"/>
+      <a name="label" val="ALUR"/>
     </comp>
     <comp lib="0" loc="(1730,570)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="R"/>
+      <a name="label" val="ALUR"/>
     </comp>
     <comp lib="0" loc="(1730,600)" name="Tunnel">
       <a name="facing" val="east"/>
@@ -884,7 +886,7 @@
     <comp lib="0" loc="(2090,540)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="R"/>
+      <a name="label" val="ALUR"/>
     </comp>
     <comp lib="8" loc="(360,690)" name="fallingsadness"/>
     <comp lib="0" loc="(200,710)" name="Tunnel">
@@ -950,11 +952,6 @@
       <a name="width" val="32"/>
       <a name="label" val="PC_4"/>
     </comp>
-    <comp lib="0" loc="(80,530)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="R"/>
-    </comp>
     <comp lib="4" loc="(220,820)" name="D Flip-Flop">
       <a name="trigger" val="falling"/>
     </comp>
@@ -1004,6 +1001,11 @@
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
       <a name="label" val="jINSTRUCTION"/>
+    </comp>
+    <comp lib="0" loc="(70,540)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="ALUR"/>
     </comp>
   </circuit>
 </project>
