@@ -4,49 +4,18 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="32"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
       <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
-      <a name="radix" val="10signed"/>
+      <a name="radix" val="16"/>
     </tool>
     <tool name="Tunnel">
-      <a name="width" val="32"/>
+      <a name="width" val="2"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -184,7 +153,9 @@
       <rect fill="none" height="40" rx="10" ry="10" stroke="#000000" stroke-width="2" width="1740" x="30" y="30"/>
       <circ-anchor facing="north" height="6" width="6" x="57" y="27"/>
     </appear>
+    <wire from="(220,340)" to="(220,980)"/>
     <wire from="(280,100)" to="(280,230)"/>
+    <wire from="(520,980)" to="(570,980)"/>
     <wire from="(260,340)" to="(260,480)"/>
     <wire from="(480,340)" to="(530,340)"/>
     <wire from="(360,860)" to="(410,860)"/>
@@ -214,6 +185,7 @@
     <wire from="(400,900)" to="(410,900)"/>
     <wire from="(270,230)" to="(280,230)"/>
     <wire from="(260,480)" to="(390,480)"/>
+    <wire from="(220,980)" to="(420,980)"/>
     <wire from="(590,230)" to="(600,230)"/>
     <wire from="(340,790)" to="(410,790)"/>
     <wire from="(70,100)" to="(70,230)"/>
@@ -245,6 +217,7 @@
     <wire from="(340,340)" to="(360,340)"/>
     <wire from="(220,340)" to="(240,340)"/>
     <wire from="(240,340)" to="(260,340)"/>
+    <wire from="(200,340)" to="(220,340)"/>
     <wire from="(220,230)" to="(230,230)"/>
     <wire from="(320,340)" to="(320,710)"/>
     <wire from="(640,230)" to="(650,230)"/>
@@ -397,11 +370,6 @@
     <comp lib="0" loc="(530,560)" name="Tunnel">
       <a name="label" val="MemRW"/>
     </comp>
-    <comp lib="0" loc="(220,340)" name="Tunnel">
-      <a name="facing" val="east"/>
-      <a name="width" val="32"/>
-      <a name="label" val="inst"/>
-    </comp>
     <comp loc="(500,630)" name="ImmSelSub"/>
     <comp lib="0" loc="(530,630)" name="Tunnel">
       <a name="width" val="3"/>
@@ -427,6 +395,16 @@
     </comp>
     <comp lib="0" loc="(530,860)" name="Tunnel">
       <a name="label" val="PCSel"/>
+    </comp>
+    <comp loc="(520,980)" name="ALUSelSub"/>
+    <comp lib="0" loc="(570,980)" name="Tunnel">
+      <a name="width" val="4"/>
+      <a name="label" val="ALUSel"/>
+    </comp>
+    <comp lib="0" loc="(200,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="width" val="32"/>
+      <a name="label" val="inst"/>
     </comp>
   </circuit>
   <circuit name="PCSelSub">
@@ -2000,6 +1978,7 @@
     <wire from="(460,150)" to="(580,150)"/>
     <wire from="(460,190)" to="(580,190)"/>
     <wire from="(520,450)" to="(560,450)"/>
+    <wire from="(520,430)" to="(560,430)"/>
     <wire from="(590,440)" to="(630,440)"/>
     <wire from="(630,160)" to="(730,160)"/>
     <wire from="(70,90)" to="(70,110)"/>
@@ -2168,6 +2147,9 @@
     </comp>
     <comp lib="0" loc="(1070,170)" name="Tunnel">
       <a name="label" val="s"/>
+    </comp>
+    <comp lib="0" loc="(520,430)" name="Constant">
+      <a name="value" val="0x0"/>
     </comp>
   </circuit>
   <circuit name="ASelSub">
@@ -2829,6 +2811,7 @@
     <wire from="(520,300)" to="(620,300)"/>
     <wire from="(70,90)" to="(70,110)"/>
     <wire from="(1540,360)" to="(1590,360)"/>
+    <wire from="(910,1570)" to="(910,1590)"/>
     <wire from="(530,1030)" to="(530,1050)"/>
     <wire from="(1200,1060)" to="(1250,1060)"/>
     <wire from="(590,1730)" to="(590,1750)"/>
@@ -2995,6 +2978,7 @@
     <wire from="(280,1460)" to="(280,1480)"/>
     <wire from="(1410,340)" to="(1470,340)"/>
     <wire from="(970,1330)" to="(1140,1330)"/>
+    <wire from="(910,1530)" to="(910,1550)"/>
     <wire from="(530,990)" to="(530,1010)"/>
     <wire from="(590,1690)" to="(590,1710)"/>
     <wire from="(620,1400)" to="(620,1420)"/>
@@ -3044,6 +3028,7 @@
     <wire from="(550,1720)" to="(580,1720)"/>
     <wire from="(200,1300)" to="(220,1300)"/>
     <wire from="(970,830)" to="(1130,830)"/>
+    <wire from="(870,1560)" to="(900,1560)"/>
     <wire from="(970,220)" to="(1100,220)"/>
     <wire from="(1030,450)" to="(1100,450)"/>
     <wire from="(1030,130)" to="(1100,130)"/>
@@ -4482,6 +4467,24 @@
       <a name="facing" val="north"/>
       <a name="width" val="4"/>
       <a name="label" val="ALUSelect"/>
+    </comp>
+    <comp lib="0" loc="(910,1530)" name="Constant">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
+      <a name="value" val="0x9"/>
+    </comp>
+    <comp lib="0" loc="(870,1560)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="MUL"/>
+    </comp>
+    <comp lib="0" loc="(910,1590)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="width" val="4"/>
+      <a name="label" val="ALUSelect"/>
+    </comp>
+    <comp lib="1" loc="(910,1570)" name="Controlled Buffer">
+      <a name="facing" val="south"/>
+      <a name="width" val="4"/>
     </comp>
   </circuit>
   <circuit name="MemRWSub">
