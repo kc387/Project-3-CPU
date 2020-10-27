@@ -4,49 +4,18 @@
 
   <lib desc="#Wiring" name="0">
     <tool name="Splitter">
-      <a name="facing" val="west"/>
-      <a name="incoming" val="32"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
       <a name="appear" val="center"/>
-      <a name="bit1" val="0"/>
-      <a name="bit2" val="0"/>
-      <a name="bit3" val="0"/>
-      <a name="bit4" val="0"/>
-      <a name="bit5" val="0"/>
-      <a name="bit6" val="0"/>
-      <a name="bit7" val="0"/>
-      <a name="bit8" val="0"/>
-      <a name="bit9" val="0"/>
-      <a name="bit10" val="0"/>
-      <a name="bit11" val="0"/>
-      <a name="bit12" val="0"/>
-      <a name="bit13" val="0"/>
-      <a name="bit14" val="0"/>
-      <a name="bit15" val="0"/>
-      <a name="bit16" val="1"/>
-      <a name="bit17" val="1"/>
-      <a name="bit18" val="1"/>
-      <a name="bit19" val="1"/>
-      <a name="bit20" val="1"/>
-      <a name="bit21" val="1"/>
-      <a name="bit22" val="1"/>
-      <a name="bit23" val="1"/>
-      <a name="bit24" val="1"/>
-      <a name="bit25" val="1"/>
-      <a name="bit26" val="1"/>
-      <a name="bit27" val="1"/>
-      <a name="bit28" val="1"/>
-      <a name="bit29" val="1"/>
-      <a name="bit30" val="1"/>
-      <a name="bit31" val="1"/>
     </tool>
     <tool name="Pin">
       <a name="facing" val="north"/>
     </tool>
     <tool name="Probe">
-      <a name="radix" val="10signed"/>
+      <a name="radix" val="16"/>
     </tool>
     <tool name="Tunnel">
-      <a name="width" val="32"/>
+      <a name="width" val="2"/>
     </tool>
     <tool name="Pull Resistor">
       <a name="facing" val="north"/>
@@ -650,7 +619,7 @@
     <comp lib="0" loc="(150,1200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="INSTRUCTION"/>
+      <a name="label" val="jINSTRUCTION"/>
     </comp>
     <comp lib="12" loc="(50,990)" name="control_logic"/>
     <comp lib="0" loc="(50,970)" name="Tunnel">
@@ -969,7 +938,7 @@
     <comp lib="0" loc="(210,1280)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="INSTRUCTION2"/>
+      <a name="label" val="INSTRUCTION"/>
     </comp>
     <comp lib="2" loc="(270,1300)" name="Multiplexer">
       <a name="width" val="32"/>
@@ -977,7 +946,7 @@
     </comp>
     <comp lib="0" loc="(250,1350)" name="Tunnel">
       <a name="facing" val="north"/>
-      <a name="label" val="jump"/>
+      <a name="label" val="PCSel"/>
     </comp>
     <comp lib="0" loc="(180,1310)" name="Constant">
       <a name="width" val="32"/>
@@ -990,17 +959,17 @@
     <comp lib="0" loc="(500,1200)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="jINSTRUCTION"/>
+      <a name="label" val="INSTRUCTION2"/>
     </comp>
     <comp lib="0" loc="(540,790)" name="Tunnel">
       <a name="facing" val="east"/>
       <a name="width" val="32"/>
-      <a name="label" val="jINSTRUCTION"/>
+      <a name="label" val="INSTRUCTION2"/>
     </comp>
     <comp lib="0" loc="(330,970)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="width" val="32"/>
-      <a name="label" val="jINSTRUCTION"/>
+      <a name="label" val="INSTRUCTION2"/>
     </comp>
     <comp lib="0" loc="(70,540)" name="Tunnel">
       <a name="facing" val="east"/>
